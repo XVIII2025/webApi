@@ -9,7 +9,7 @@ router.post("/", (req, res) => {
     if (req.body) {
         let Person: Person = req.body;
         let sql = 
-        "insert into `Person`(`name`, `age`) VALUES (?,?)";
+        "insert into `person`(`name`, `age`) VALUES (?,?)";
 
         sql = mysql.format(sql, [
             Person.name,
