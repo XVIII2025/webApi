@@ -8,9 +8,9 @@ const mysql_1 = __importDefault(require("mysql"));
 const util_1 = __importDefault(require("util"));
 exports.conn = mysql_1.default.createPool({
     connectionLimit: 10,
-    host: "localhost",
-    user: "apihw5",
-    password: "apihw5",
-    database: "webapi"
+    host: "sql6.freesqldatabase.com",
+    user: "sql6689895",
+    password: "xka2LEHhPC",
+    database: "sql6689895"
 });
 exports.queryPromise = util_1.default.promisify(exports.conn.query).bind(exports.conn);

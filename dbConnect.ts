@@ -4,10 +4,10 @@ import util from "util";
 export const conn = mysql.createPool(
     {
         connectionLimit: 10,
-        host: "127.0.0.1",
-        user: "apihw5",
-        password: "apihw5",
-        database: "webapi"
+        host: "sql6.freesqldatabase.com",
+        user: "sql6689895",
+        password: "xka2LEHhPC",
+        database: "sql6689895"
     }
 );
 export const queryPromise = util.promisify(conn.query).bind(conn);
